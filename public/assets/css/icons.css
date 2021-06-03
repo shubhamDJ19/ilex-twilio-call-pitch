@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?v81cn2');
+  src:  url('../fonts/icomoon.eot?v81cn2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?v81cn2') format('truetype'),
+    url('../fonts/icomoon.woff?v81cn2') format('woff'),
+    url('../fonts/icomoon.svg?v81cn2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-phone-filled:before {
+  content: "\e91c";
+}
+.icon-phone:before {
+  content: "\e91d";
+}
+.icon-external-link:before {
+  content: "\e91b";
+}
+.icon-end-call:before {
+  content: "\e915";
+}
+.icon-mic-btn-mute:before {
+  content: "\e919";
+}
+.icon-video-btn-mute:before {
+  content: "\e91a";
+}
+.icon-agenda:before {
+  content: "\e918";
+}
+.icon-question:before {
+  content: "\e917";
+}
+.icon-pools:before {
+  content: "\e916";
+}
+.icon-video-btn2:before {
+  content: "\e914";
+}
+.icon-user-circle:before {
+  content: "\e913";
+}
+.icon-checked:before {
+  content: "\e90c";
+}
+.icon-angle-back:before {
+  content: "\e900";
+}
+.icon-chat:before {
+  content: "\e901";
+}
+.icon-close:before {
+  content: "\e902";
+}
+.icon-dog:before {
+  content: "\e903";
+}
+.icon-flower:before {
+  content: "\e904";
+}
+.icon-full-screen:before {
+  content: "\e905";
+}
+.icon-home:before {
+  content: "\e906";
+}
+.icon-leaf:before {
+  content: "\e907";
+}
+.icon-mic-btn:before {
+  content: "\e908";
+}
+.icon-play:before {
+  content: "\e909";
+}
+.icon-send:before {
+  content: "\e90a";
+}
+.icon-stall:before {
+  content: "\e90b";
+}
+.icon-tick:before {
+  content: "\e912";
+}
+.icon-times:before {
+  content: "\e90d";
+}
+.icon-unchecked:before {
+  content: "\e90e";
+}
+.icon-user:before {
+  content: "\e90f";
+}
+.icon-video-btn:before {
+  content: "\e910";
+}
+.icon-video:before {
+  content: "\e911";
+}
+.icon-poll:before {
+  content: url('../fonts/poll.svg')
+}
+.icon-qna:before {
+  content: url('../fonts/qna.svg')
+}

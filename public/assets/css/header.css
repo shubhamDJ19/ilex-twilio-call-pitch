@@ -1,0 +1,12 @@
+.headerBox { padding: 1rem; background: #000; position: relative; z-index: 2; }
+.headerBox__logo { width: 8rem; }
+.headerBox {}   
+
+/* Tablet */
+@media only screen and (min-width: 767px) {
+    .headerBox { display: none; }
+}
+
+/* Desktop */
+@media only screen and (min-width: 991px) {}
+

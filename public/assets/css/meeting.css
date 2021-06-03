@@ -1,0 +1,123 @@
+.meetingBox { position: fixed; font-family: 'Poppins', sans-serif; flex-direction: column; left: 0; top: 0; display: flex; height: 100%; width: 100%; z-index: 12; transition: all 0.3s; background: #1F1F1F; }
+.meetingBox__header { padding: 10px 20px 10px 45px; position: relative; min-height: 50px; color: #fff; display: flex; align-items: center; }
+.meetingBox__header > img { width: 60px; }
+.meetingBox__header > span { padding: 3px 0px 0 15px; font-size: 12px; display: block;  font-weight: bold;}
+.meetingBox__header.meetingBox__header__gradient { background: linear-gradient(98.55deg, #EEB33B 18.98%, #FFD100 48.58%, #EEB33B 87.87%, #FFD100 96.38%), #FFFFFF;
+    /* linear-gradient(0deg, #004EE3 -19.01%, #0080E9 37.4%, #00A2ED 81.84%, #00AEEF 106.14%), linear-gradient(109.66deg, #EE4D80 -6.4%, #C6437B 1.58%, #993776 12.05%, #732D71 22.96%, #53246D 34.19%, #3B1E6A 45.8%, #2A1A68 58.01%, #1F1766 71.13%, #1C1666 86.92%, #1C1A6A 114.81%, #1E2674 143.11%, #203A85 171.5%, #224992 187.14%); */
+    /* linear-gradient(169.1deg, #EE4D80 -6.4%, #C6437B 1.58%, #993776 12.05%, #732D71 22.96%, #53246D 34.19%, #3B1E6A 45.8%, #2A1A68 58.01%, #1F1766 71.13%, #1C1666 86.92%, #1C1A6A 114.81%, #1E2674 143.11%, #203A85 171.5%, #224992 187.14%);  */
+}
+
+.meetingBox__header--toggle { padding: 10px 20px; position: absolute; right: 0; top: 0; height: 100%; width: 60px; background: transparent; border: medium none; z-index: 3; }
+.meetingBox__header--toggle::after { position: fixed; left: 0; top: 0; display: none; height: 100%; width: 17%; width: calc(100% - 310px); content: ""; }
+.meetingBox__header--toggle span { width: 100%; transition: all 0.3s; display: block; height: 3px; background-color: #fff; margin: 6px 0; }
+.meetingBox__header--toggle:focus { outline: none; }
+.meetingBox__header--toggle.active::after { display: block; }
+.meetingBox__header--toggle.active span { opacity: 0; margin: -3px 0; }
+.meetingBox__header--toggle.active span:first-child { opacity: 1; transform: rotate(45deg); }
+.meetingBox__header--toggle.active span:last-child { opacity: 1; transform: rotate(-45deg); }
+
+.meetingBox__body { display: flex; overflow: hidden; height: 100%; background: #fff; }
+.meetingBox__contents { padding: 15px; display: flex; flex-wrap: wrap; width: 100%; overflow: auto; }
+
+.meetingBox__sidebar { display: flex; align-items: center; position: fixed; right: 0; top: 0; margin-right: -310px; transition: all 0.3s; min-width: 310px; width: 310px; overflow: auto; height: 100%; background: #C4C4C4; }
+.meetingBox__sidebar.active { margin-right: 0; z-index: 2; }
+.meetingBox__sidebar ul { padding: 30px 0; list-style-type: none; width: 100%; }
+.meetingBox__sidebar ul > li { font-size: 13px; }
+.meetingBox__sidebar ul > li > a { padding: 12px 50px 11px; color: #505050; text-decoration: none; display: block; font-weight: bold;}
+.meetingBox__sidebar ul > li > a.active { color: #AA0061; }
+
+.meetingBox__block { height: 11rem; max-width: 480px; min-height: 180px; padding: 20px 20px 15px 20px; margin: 0 0 15px 0; display: flex; align-items: flex-start; justify-content: space-between;  width: 100%; background: linear-gradient(0deg, #2F2F2F, #2F2F2F), linear-gradient(118.47deg, #EE4D80 -35.5%, #C6437B -20.9%, #993776 -1.73%, #732D71 18.24%, #53246D 38.79%, #3B1E6A 60.04%, #2A1A68 82.4%, #1F1766 106.42%, #1C1666 135.32%, #1C1A6A 186.37%, #1E2674 238.17%, #203A85 290.14%, #224992 318.76%);  
+    padding: 1.5rem;
+    border-radius: 0.2rem;
+    border-top-right-radius: 3rem;} /*border-radius: 10px;*/
+.meetingBox__block.meetingBox__block--gradient { background: #FFD100;
+    /* linear-gradient(0deg, #004EE3 -19.01%, #0080E9 37.4%, #00A2ED 81.84%, #00AEEF 106.14%), linear-gradient(109.66deg, #EE4D80 -6.4%, #C6437B 1.58%, #993776 12.05%, #732D71 22.96%, #53246D 34.19%, #3B1E6A 45.8%, #2A1A68 58.01%, #1F1766 71.13%, #1C1666 86.92%, #1C1A6A 114.81%, #1E2674 143.11%, #203A85 171.5%, #224992 187.14%); */
+    /* linear-gradient(0deg, rgba(47, 47, 47, 0.5), rgba(47, 47, 47, 0.5)), linear-gradient(118.47deg, #EE4D80 -35.5%, #C6437B -20.9%, #993776 -1.73%, #732D71 18.24%, #53246D 38.79%, #3B1E6A 60.04%, #2A1A68 82.4%, #1F1766 106.42%, #1C1666 135.32%, #1C1A6A 186.37%, #1E2674 238.17%, #203A85 290.14%, #224992 318.76%);  */
+}
+.meetingBox__block.meetingBox__block--greySolid 
+{
+    background: #C4C4C4;
+}
+.meetingBox__block__right { padding-left: 15px; display: flex; height: 100%; align-items: flex-end; flex-direction: column; justify-content: space-between; }   
+.meetingBox__block__title { padding-top: 10px; color: #fff; font-size: 16px;  font-weight: bold;}
+
+.meetingBox__block__status { display: flex; margin-bottom: 15px; align-items: center; padding: 13px 30px; font-size: 15px; width: 100%; color: #fff; border-radius: 10px; background: #fff; }
+.meetingBox__block__status::before { height: 14px; width: 14px; border-radius: 14px; content: ""; background: #fff; display: inline-block; margin-right: 10px; }
+.meetingBox__block__status.green { color: #69F977; }
+.meetingBox__block__status.green:before { background: #69F977; }
+.meetingBox__block__status.red { color: #F96969; }
+.meetingBox__block__status.red:before { background: #F96969; }
+
+.meetingBox__block__btn { padding: 17px 45px; white-space: nowrap; cursor: pointer; border: medium none; font-size: 15px; width: 100%; text-decoration: none; color: #fff; display: block; width: 100%; border-radius: 10px; text-align: center; background: #000000; }
+.meetingBox__block__btn:hover { background: #ffffff; color: #000000; }
+.meetingBox__block__btn:focus { outline: none; }
+.meetingBox__block__btn { background: #C4C4C4;
+     /* linear-gradient(265.23deg, #8E5000 -49.48%, #FDE56F 139.03%), #000000;;  */
+}
+.meetingBox__block__btn:disabled { pointer-events: none; background: #444444; color: rgba(255, 255, 255, 0.3); }
+.meetingBox_close {
+     display: block; cursor: pointer; width: 3rem; height: auto; line-height: 2.5rem; border: medium none; position: absolute; left: 0; background: transparent; background-position: center; background-repeat: no-repeat; background-size: contain; color: #fff; font-size: 2rem; border: 1px solid #AA0061;
+     background-color: #AA0061;}
+.meetingBox_close:focus { outline: none; }
+
+.meeting_title
+{
+    position: absolute;
+    right: 4rem;
+}
+
+.meetingBox_close_mobile
+{
+    width: 2.0rem;
+    height: 2.0rem;
+    border: none;
+    background: url(../images/Cross.png);
+    border: 1px solid #AA0061;
+    background-color: #AA0061;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+.meetingBox__header_mobileoverride
+{
+    position: absolute!important;
+    width: 100% !important;
+}
+
+.adminBox {
+    border: 0.25rem solid #AA0061;
+}
+
+/* Tablet */
+@media only screen and (min-width: 767px) {
+    .meetingBox_close {  left: auto; right: 30px; background: url(../images/Cross.png) center center no-repeat; background-size: 20px 20px; text-indent: -9999px; border: 1px solid #fff; border-radius: 50%; height: 3rem; width: 3rem; 
+        border: 1px solid #AA0061;
+        background-color: #AA0061;}
+    .meetingBox__header { padding: 20px 48px 23px; min-height: 108px; }
+    .meetingBox__header--toggle { display: none; }
+    .meetingBox__header > img { width: 115px;}
+    .meetingBox__header > span { padding: 12px 20px 0 62px; font-size: 18px; }
+    .meetingBox__sidebar { position: static; right: 0; margin-right: 0; display: block; }
+    .meetingBox__contents { padding: 43px 0 10px 40px; }
+    .meetingBox__block { margin: 0 30px 30px 0; align-items: center; }
+    .meetingBox__block__title { padding-top: 0; font-size: 18px; font-weight: bold;}
+    .meetingBox__block__status, .meetingBox__block__btn { font-size: 20px; border-radius: 37px; width: auto; }
+    .meetingBox__sidebar ul > li { font-size: 18px; }
+}
+
+/* Desktop */
+@media only screen and (min-width: 991px) {
+    .meetingBox__block { width: 70%; }
+    .meetingBox__block__title { font-size: 20px; font-weight: bold; }
+    .meetingBox__block__btn { padding: 17px 30px; }
+    .meetingBox__block__status { padding: 13px 20px; }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1199px) {
+    .meetingBox__block { width: 45%; }
+    .meetingBox__block__btn { padding: 17px 45px; }
+    .meetingBox__block__status { padding: 13px 30px; }
+    .meetingBox__block__title { font-size: 22px; font-weight: bold;}
+}
+.meetingBox__sidebar_base { position: absolute; bottom: 0; top: auto; left: 0; right: auto; height: 0.8rem; background: linear-gradient(98.55deg, #EEB33B 18.98%, #FFD100 48.58%, #EEB33B 87.87%, #FFD100 96.38%), #FFFFFF;}

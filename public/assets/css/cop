@@ -1,0 +1,60 @@
+
+.caller_whiteboard .CallBox_1{
+    transform: perspective(1200px) rotateY(26deg);
+    /* rotateZ(4deg); */
+    /* margin: 8.3% 11.5%; */
+    margin: 8.5% 11.75%;
+    width: 21%;
+    height: 28.35%;
+    transition: 0.25s;
+}
+
+.caller_whiteboard .CallBox_2{
+    transform: perspective(1200px) rotateY(335deg);
+     /* rotateZ(-4deg); */
+    /* margin: 8.2% 67.3%; */
+    margin: 8.5% 67.3%;
+
+    width: 21%;
+    height: 28.35%;
+}
+
+.caller_whiteboard .CallBox_3{
+    /* transform: perspective(1200px) rotateY(0deg) rotateZ(1deg); */
+    margin: 9% 31.9%;
+    width: 17.6%;
+    height: 26.35%;
+}
+
+.caller_whiteboard .CallBox_4{
+    /* transform: perspective(1200px) rotateY(0deg) rotateZ(-1deg); */
+    margin: 9% 50.5%;
+    width: 17.6%;
+    height: 26.35%;
+}
+
+.caller_whiteboard .CallBox_5{
+    transform: perspective(1200px) rotateY(20deg);
+    margin: 24.1% 11.75%;
+    width: 21%;
+    height: 28.35%;
+}
+
+.caller_whiteboard .CallBox_6{
+    transform: perspective(1200px) rotateY(-20deg);
+    margin: 24.1% 67.3%;
+    width: 21%;
+    height: 28.35%;
+}
+
+.caller_whiteboard .CallBox_7{
+    margin: 24.5% 31.9%;
+    width: 17.6%;
+    height: 26.35%;
+}
+
+.caller_whiteboard .CallBox_8{
+    margin: 24.5% 50.5%;
+    width: 17.6%;
+    height: 26.35%;
+}

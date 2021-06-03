@@ -1,0 +1,73 @@
+.publicChatContainer
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    width: 00;
+    height: 100%;
+}
+
+.publicChatContainer-open
+{
+    width: 35%;
+}
+
+.publicChatContainer-head
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 61px;
+    background: black;
+}
+
+.publicChat-body
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.publicChat-close
+{
+    position: absolute;
+    right: 0;
+    margin: 1rem;
+    width: 2rem;
+}
+
+.publicChat-btn:hover
+{
+    opacity: 0.5;
+}
+
+.publicChat-btn
+{
+    width: 6rem;
+}
+
+
+@media only screen and (max-width: 767px) 
+{
+    .publicChat-btn
+    {
+        width: 5rem;
+    }
+
+    .publicChatContainer
+    {
+        top: auto;
+        bottom: 0;
+        height: 94%;
+    }
+
+    .publicChatContainer-open
+    {
+        width: 100%;
+    }
+
+    
+}
+

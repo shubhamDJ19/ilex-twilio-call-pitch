@@ -1,0 +1,466 @@
+.main3DContainer {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#FrameVideo {
+    position: absolute;
+    width: calc(100vh * 2.33);
+    height: 100vh;
+    top: 0;
+}
+
+.IntroTransitionVideo {
+    position: absolute;
+    width: auto;
+    width: calc(100vh * 2.33);
+    height: 100vh;
+    z-index: 1;
+    transition: 0.15s;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+}
+
+.TransitionVideo {
+    position: absolute;
+    width: auto;
+    width: calc(100vh * 2.33);
+    height: 100vh;
+    z-index: 1;
+    transition: 0.15s;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+}
+
+.fadeInTransitionVideo {
+    opacity: 1;
+}
+
+#FrameImage {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    max-width: none;
+}
+
+#overlayContent {
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#child3DContainer {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px 0px;
+    transition: 0.5s;
+}
+
+#child3DContainer.left {
+    /* margin: 0% 10%; */
+    transition: 0.5s;
+}
+
+#child3DContainer.right {
+    /* margin: 0% -10%; */
+    transition: 0.5s;
+}
+
+.hotspot {
+    cursor: pointer;
+    position: absolute;
+    height: 15%;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.15s;
+}
+
+.hotspot:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.backButton {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 1rem 0.8rem;
+    z-index: 15;
+    max-width: 10rem;
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+.backButton:hover {
+    transform: scale(1);
+    transition: 0.1s;
+}
+
+.UILoader {
+    position: absolute;
+    z-index: 55;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: rgba(0, 0, 0, 0.418);
+    justify-content: center;
+    align-items: center;
+}
+
+.UILoader img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.globalBackButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem 0.8rem;
+    z-index: 12;
+    max-width: 10rem;
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+.globalBackButton:hover {
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.1s;
+}
+
+.media-modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #00000096;
+    pointer-events: all;
+    transition: all 250ms linear;
+    /* z-index: 99; */
+}
+
+.media-modal-content {
+    width: 70%;
+    height: 70%;
+    box-shadow: 0px 0px 14px #ffffff7a;
+    border-radius: 9px;
+    border: none;
+    background-color: black;
+}
+
+.media-modal-content-image {
+    width: 45%;
+    height: auto;
+    max-height: 90%;
+    box-shadow: 0px 0px 14px #ffffff7a;
+    border-radius: 9px;
+    border: none;
+    background-color: black;
+}
+
+.media-modal-content-iframe {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    box-shadow: 0px 0px 14px #ffffff7a;
+    border-radius: 9px;
+    border: none;
+    background-color: black;
+}
+
+.closeButton-mediaModal {
+    position: fixed;
+    height: 3rem;
+    top: 2%;
+    /* right: 2%; */
+    opacity: 0.95;
+    transform: scale(0.95);
+    transition: 0.15s;
+    box-shadow: 0px 3px 30px #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.closeButton-mediaModal:hover {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0px 0px 10px #000;
+}
+
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* kbv */
+
+.icon-kbv {
+    background-image: url('/hitachi_assets/images/kbv.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.75rem;
+    display: inline-block;
+}
+
+.unsetPos {
+    position: unset !important;
+}
+
+.mg-b-2rem {
+    margin-bottom: 1rem;
+}
+
+.mg-t-2rem {
+    margin-top: 1rem;
+}
+
+.videoControlsContainer {
+    position: relative;
+    bottom: 5.5rem;
+    left: 0.5rem;
+}
+
+.videoControlsContainer-fullscreen {
+    position: absolute;
+    z-index: 1;
+    bottom: 0.4rem;
+    left: 1rem;
+    padding: 0.5rem;
+    background: #4578d3;
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(150, 150, 150, 0.5) 100%);
+    backdrop-filter: blur(34px); */
+    /* -webkit-backdrop-filter: blur(34px); */
+    border: white;
+    border-width: thick;
+    border-style: double;
+    border-radius: 0.5rem;
+}
+
+.coverFullScreen {
+    width: 100vw;
+    bottom: 0;
+    z-index: 44;
+}
+
+.videoControlsIcon {
+    max-width: 1.25rem;
+}
+
+.zIndex50 {
+    z-index: 50;
+}
+
+.IntroFadeImage {
+    opacity: 0;
+    transition: 0.2s;
+    display: none;
+}
+
+.infoButton-audi {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0.5rem #4578d3;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.infoButton-audi:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 1.5rem #4578d3;
+}
+
+/* public Chat  */
+
+.scrollableIframeParent {
+    /* -webkit-overflow-scrolling: touch; */
+    /* overflow-y: scroll */
+    overflow: auto;
+}
+
+.publicChatBox {
+    position: absolute;
+    bottom: 0;
+    margin: 1rem;
+    border: 0;
+    background: transparent;
+    max-width: 782px;
+    border-radius: 0.5rem;
+    max-width: 765px;
+    width: 60vh;
+    height: 70Vh;
+    z-index: 16;
+}
+
+.leaderboardButton {
+    text-transform: uppercase;
+    background: #FFBE04;
+    color: #000;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    cursor: pointer;
+    transform: scale(0.95);
+    transition: 0.15s;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leaderboardIcon {
+    background: url("/assets/images/leaderboardIcon_black.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.25rem;
+    width: 1.0rem;
+    height: 1.0rem;
+}
+
+.leaderboardButton:hover .leaderboardIcon {
+    background: url("/assets/images/leaderboardIcon_yellow.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.25rem;
+}
+
+.leaderboardButton:hover {
+    transform: scale(1.0);
+    color: #FFBE04;
+    background: #000;
+    border: 0.15rem solid #FFBE04;
+}
+
+.overlayContent-size {
+    height: 100vh;
+    width: calc(233vh);
+}
+
+.leftBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0.5rem;
+}
+
+.leftBottom img {
+    width: 3rem;
+    height: 4rem;
+}
+
+/* public Chat -X */
+
+@media only screen and (max-width: 991px) {
+    .LoginScreenVideo{
+        opacity: 0!important;
+    }
+
+    .publicChatBox {
+        width: 95%;
+        height: calc(100% - 8rem);
+        top: 0;
+        bottom: auto;
+    }
+    .icon-kbv {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-bottom: 0.2rem;
+    }
+    #rightArrow {
+        transform: scale(0.8, 0.8) rotate(270deg);
+        top: 45%;
+        right: 1%;
+    }
+    #leftArrow {
+        transform: scale(0.8, 0.8) rotate(90deg);
+        top: 45%;
+        left: 1%;
+    }
+    .videoControlsContainer-fullscreen {
+        /* bottom: 5.5rem; */
+    }
+    .mb-fullscreenControls {
+        bottom: 0.4rem;
+    }
+    .backButton {
+        opacity: 1;
+    }
+    .globalBackButton {
+        opacity: 1;
+    }
+    .media-modal {
+        height: calc(100%);
+    }
+    .media-modal-content {
+        width: 80%;
+        height: 80vh;
+    }
+    .media-modal-content-iframe {
+        height: 100%;
+        max-height: 100vh;
+    }
+    .videoControlsContainer-b-1 {
+        bottom: 1.0rem;
+    }
+    .videoControlsIcon {
+        max-width: 1rem;
+    }
+    #FrameVideo {
+        position: absolute;
+        width: calc((100vh ) * 2.33);
+        height: calc(100vh );
+        top: 0;
+    }
+    .TransitionVideo {
+        width: calc((100vh ) * 2.33);
+        height: calc(100vh );
+    }
+    .IntroTransitionVideo {
+        width: calc((100vh) * 2.33);
+        height: calc(100vh);
+    }
+    .overlayContent-size {
+        height: calc(100vh );
+        width: calc((100vh ) * 2.33);
+    }
+    .leftBottom {
+        position: absolute;
+        bottom: 7rem;
+        left: 0;
+        margin: 0.5rem;
+    }
+}

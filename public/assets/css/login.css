@@ -1,0 +1,23 @@
+
+.loginBox { position: fixed; right: 0; bottom: 0; z-index: 10; height: 60vh; width: 100%; background: #161616; }
+.loginBox__logo { background: #000000; }
+.loginBox__logo > img { max-width: 11.235294117647058rem; }
+.loginBox__avatars { list-style-type: none; display: flex; align-items: center; justify-content: space-between; }
+
+.loginBox .scrollable-part { height: calc(100% - 7.0675rem); overflow: auto; }
+.loginBox .scrollable-part.scrollable-part__notitle { height: 100%; }
+
+
+
+/* Tablet */
+@media only screen and (min-width: 767px) {
+    .loginBox { top: 0; bottom: auto; width: 31rem; height: 100%; }
+    .has-login-box { padding-right: 31rem; }
+    .loginBox__logo > img { max-width: 11.9375rem; }
+}
+
+/* Desktop */
+@media only screen and (min-width: 991px) {
+    .loginBox__logo > img { max-width: 11.9375rem; }
+}
+

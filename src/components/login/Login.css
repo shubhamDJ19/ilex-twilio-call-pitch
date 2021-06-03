@@ -1,0 +1,200 @@
+.landing-pageBox {
+    padding: 2rem;
+    padding-right: 38.125rem;
+    width: 100%;
+}
+
+.landing-pageBox__logo {
+    width: 6.4375rem;
+}
+
+.landing-pageBox__banner {
+    margin: 6rem 3.75rem 0 0;
+    width: 43.5rem;
+}
+
+.signinBox {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 30.125rem;
+    min-width: 30.125rem;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    background: url(./assets/PanelBg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.signinBox__heading {
+    padding: 8rem 2.0rem;
+    padding-bottom: 1rem;
+    font-size: 1.875rem;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Avenir Next Bold';
+    /* background: url(./assets/background.png); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 0.3rem solid #FFBE04; */
+}
+
+.signinBox_title {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.signinBox__heading div {
+    width: 100%;
+    height: 9rem;
+}
+
+.signinBox__heading .middle {
+    background: url(./assets/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.signinBox__heading .left {
+    background: url(./assets/R1Logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.signinBox__heading .right {
+    background: url(./assets/koaLogo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.signinBox__body {
+    padding: 2.125rem 2.875rem 2.125rem 4.375rem;
+    overflow: auto;
+    height: 100%;
+    position: relative;
+}
+
+.successful-registration {
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    opacity: 0.9;
+    z-index: 10;
+}
+
+.loaderContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.loaderContainer img {
+    width: 5rem
+}
+
+.form-control-login {
+    padding: 0.5rem 2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.loginBtn {
+    background-color: #fff;
+    border-radius: 0.75rem;
+    box-sizing: content-box;
+    padding: 0.5rem 0.85rem;
+    color: #0C002F;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 0;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.loginBtn:hover {
+    background-color: #dc2e26;
+    color: #fff;
+}
+
+.loginBtn:disabled {
+    background: rgba(124, 124, 124, 0.2) !important;
+    color: #A4A4A4 !important;
+    border-color: rgba(32, 32, 32, 0.2) !important;
+    opacity: 1;
+    pointer-events: none;
+}
+
+/* Desktop */
+
+@media only screen and (max-width: 991px) {
+    .signinBox__heading {
+        padding: 0rem 2.0rem;
+    }
+    .signinBox {
+        position: static;
+        min-width: 0;
+        width: 100%;
+        height: 65vh;
+        max-height: 100vh;
+        min-height: 38rem;
+        overflow: auto;
+    }
+    .landing-pageBox {
+        padding: 1.35rem;
+        min-height: auto;
+        height: 40%;
+        height: 35vh;
+        max-height: 100vh;
+        min-height: 20rem;
+    }
+    .landing-pageBox__banner {
+        margin: 1.5rem 1rem 0 0;
+        width: 20rem;
+    }
+    .landing-pageBox__logo {
+        width: 4.25rem;
+    }
+    .signinBox__body {
+        padding: 2rem;
+        overflow: auto;
+        height: 70rem;
+    }
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 991px) and (orientation: landscape) 
+{
+    .signinBox{
+        position: fixed;
+    }
+}
